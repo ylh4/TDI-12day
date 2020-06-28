@@ -1,0 +1,35 @@
+<!doctype html>
+<title> Stock Price </title>
+<link rel=stylesheet href='/static/master.css' type=text/css>
+<div class=page>
+  <h1>STOCK PRICE PLOT </h1>
+  <div>
+    <h3>
+      Insert Ticker Code and Value/price type (Ticker example: GOOG, APPL, IBM, etc)
+    </h3>
+  </div>
+  <div class=metanav>
+    <form id='about.html' method='post' action='/' >
+      <p>
+    Ticker Code: <input type='text' name='ticker' />
+      </p>
+      <p>
+    Value type: <select type='text' name='column' id="mySelect">
+      <option value="close">Closing Price</option>
+      <option value="open">Opening Price</option>
+      <option value="low">Low</option>
+      <option value="high">Open</option>
+    </select>
+      </p>
+      <p>
+    <input type='submit' value='Submit' />
+      </p>
+    </form>
+  </div>
+<div>
+  <section>
+    <h2>Trend in ' {{name_ticker}} share' and ' {{name_column}} price '</h2>
+    <img src={{url}} alt="Chart" height="420" width="520" class='center'>
+  </section>
+</div>
+</div>
