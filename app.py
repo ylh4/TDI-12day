@@ -1,3 +1,4 @@
+"python.linting.pylintPath": "/path/to/your/virtualenv/bin/pylint"
 import os
 from flask import Flask,render_template,request
 import process
